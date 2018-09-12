@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017';
 
-exports.insertUsers = (newUser) => {
+exports.insertUsers = newUser => {
     MongoClient.connect(url, {useNewUrlParser: true}, (err, db) => {
         if (err) {
             throw err;

@@ -5,6 +5,7 @@
   "author": "peter",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.6.1",
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
