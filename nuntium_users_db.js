@@ -1,7 +1,7 @@
 const Mongoclient = require('mongodb').MongoClient;
-const url = 'mongodb+srv://peter:##Petrosb55@nuntiumdb-ox3rt.gcp.mongodb.net/test?retryWrites=true';
+const url = 'mongodb+srv://peter:203050@nuntiumdb-ox3rt.gcp.mongodb.net/test?retryWrites=true';
 
-Mongoclient.connect(url, (err, db) => {
+Mongoclient.connect(url, {useNewUrlParser: true}, (err, db) => {
     if (err) {
         throw err;
     }
