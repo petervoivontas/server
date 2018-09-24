@@ -12,6 +12,7 @@ app.use((req, res, next) => {
 
 app.get('/test', (req, res, next) => {
     res.send('Hello world');
+    console.log('Hello world');
 });
 
 app.listen(PORT, () => {
